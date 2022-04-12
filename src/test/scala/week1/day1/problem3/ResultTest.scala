@@ -1,4 +1,6 @@
-package w1d1p3
+package week1.day1.problem3
+
+import week1.day1.problem3.Result
 
 class ResultTest extends org.scalatest.FunSuite {
 

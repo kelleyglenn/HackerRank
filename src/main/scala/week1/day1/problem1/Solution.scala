@@ -1,4 +1,4 @@
-package w1d1p1
+package week1.day1.problem1
 
 import scala.io.StdIn
 
@@ -10,7 +10,7 @@ object Result {
    * The function accepts INTEGER_ARRAY arr as parameter.
    */
 
-  def plusMinus(arr: Array[Int]) {
+  def plusMinus(arr: Array[Int]): Unit = {
     val floatLen = arr.length.toFloat
     val output = "%.6f\n%.6f\n%.6f".format(arr.count(_ > 0)/floatLen, arr.count(_ < 0).toFloat/floatLen, arr.count(_ == 0).toFloat/floatLen)
     println(output)
@@ -19,7 +19,7 @@ object Result {
 }
 
 object Solution {
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
     val n = StdIn.readLine.trim.toInt
 
     val arr = StdIn.readLine.replaceAll("\\s+$", "").split(" ").map(_.trim.toInt)

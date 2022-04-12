@@ -1,4 +1,4 @@
-package w1d1p3
+package week1.day1.problem3
 
 import java.io._
 import scala.io._
@@ -23,7 +23,7 @@ object Result {
 }
 
 object Solution {
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
     val printWriter = new PrintWriter(sys.env("OUTPUT_PATH"))
 
     val s = StdIn.readLine

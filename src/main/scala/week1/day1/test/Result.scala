@@ -1,4 +1,4 @@
-package w1d1test
+package week1.day1.test
 
 object Result {
   def findMedian(arr: Array[Int]): Int = {

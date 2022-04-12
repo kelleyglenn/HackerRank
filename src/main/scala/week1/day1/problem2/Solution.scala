@@ -1,4 +1,4 @@
-package w1d1p2
+package week1.day1.problem2
 
 import scala.io._
 
@@ -10,7 +10,7 @@ object Result {
    * The function accepts INTEGER_ARRAY arr as parameter.
    */
 
-  def miniMaxSum(arr: Array[Int]) {
+  def miniMaxSum(arr: Array[Int]): Unit = {
     val longs:Array[Long] = arr.map(_.toLong)
     val combos = longs.combinations(4).map(_.sum).toSeq
     println("%d %d".format(combos.min, combos.max))
@@ -19,7 +19,7 @@ object Result {
 }
 
 object Solution {
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
 
     val arr = StdIn.readLine.replaceAll("\\s+$", "").split(" ").map(_.trim.toInt)
 
